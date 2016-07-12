@@ -1,0 +1,82 @@
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+body {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Suez One', serif;
+}
+
+.wrapper {
+    display: table;
+    padding: 20px;
+}
+
+article {
+    height: 75vh;
+    column-gap: 0;
+    column-rule: 1px outset rgba(187, 33, 27, 0.2);
+    column-width: 300px;
+    vertical-align: middle;
+    text-align: justify;
+    animation: fadeIn .6s ease-in;
+}
+
+article h1 {
+    padding: 0 20px;
+    font-size: 36px;
+    column-span: all;
+}
+
+article h2, article h3 {
+    padding: 0 20px;
+}
+
+article blockquote {
+    margin: 0;
+    padding: 0 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+article p {
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+article figure img {
+    column-span: none;
+    break-inside: avoid-column;
+    max-width: 100%;
+}
+
+article:after {
+    width: 30px;
+    content: "";
+}
+
+article aside {
+    padding: 20px;
+    background: #a7d5ff;
+    break-inside: avoid;
+    text-align: left;
+}
+
+article aside h1 {
+    column-span: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+article aside p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+article aside p:first-of-type {
+    font-weight: 400;
+}
